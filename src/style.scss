@@ -1,0 +1,144 @@
+.wp-block-tsb-team-card-glass-effect {
+	box-sizing: border-box;
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	a {
+		outline: none !important;
+		text-decoration: none;
+	}
+
+	.tsb_tcge-team-section {
+		width: 100%;
+	}
+
+	.tsb_tcge-team-wrapper {
+		display: grid;
+		width: 100%;
+		align-items: stretch;
+	}
+
+	.tsb_tcge-member-card {
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+		.tsb_tcge-member-image {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			transition: transform 0.5s ease;
+			transform-origin: center center;
+
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+
+			.tsb_tcge-img-placeholder {
+				width: 100%;
+				height: 100%;
+				background: #333;
+			}
+		}
+
+		.tsb_tcge-glass-overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+			overflow: hidden;
+			box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+			transform: translateY(100%);
+			transition: transform 0.5s ease;
+			transition-delay: 0.6s;
+
+			.tsb_tcge-member-info {
+				width: 100%;
+
+				> * {
+					opacity: 0;
+					transform: translate(20px, 30px);
+					transition: opacity 0.5s ease, transform 0.5s ease;
+					transition-delay: 0.5s;
+				}
+			}
+
+			.tsb_tcge-social-links {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				list-style: none;
+
+				li {
+					transform: translateY(40px);
+					opacity: 0;
+					transition: opacity 0.5s ease, transform 0.5s ease;
+					transition-delay: calc(0.1s * var(--i, 1));
+
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+						&:hover {
+							transform: scale(1.15);
+						}
+
+						svg {
+							display: block;
+							flex-shrink: 0;
+							transition: color 0.3s ease, fill 0.3s ease;
+						}
+					}
+				}
+			}
+
+			.tsb_tcge-button {
+				display: inline-block;
+				opacity: 0;
+				transform: translateY(30px);
+				transition: opacity 0.5s ease, transform 0.5s ease, background 0.3s ease, color 0.3s ease;
+				transition-delay: 0.6s;
+			}
+		}
+
+		&:hover {
+			.tsb_tcge-glass-overlay {
+				transform: translateY(0);
+				transition-delay: 0s;
+
+				.tsb_tcge-member-info > * {
+					opacity: 1;
+					transform: translate(0, 0);
+				}
+
+				.tsb_tcge-social-links li {
+					opacity: 1;
+					transform: translateY(0);
+				}
+
+				.tsb_tcge-button {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}

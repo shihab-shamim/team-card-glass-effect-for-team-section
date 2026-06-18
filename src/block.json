@@ -1,0 +1,249 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "tsb/team-card-glass-effect",
+	"version": "1.0.0",
+	"title": "Team Card Glass Effect",
+	"category": "widgets",
+	"description": "Team card glass effect is a WordPress plugin that allows you to create team card glass effect on your website.",
+	"keywords": [
+		"Team Card Glass Effect", "team", "card", "glass", "effect"
+	],
+	"textdomain": "team-section",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "center"
+		},
+		"profiles": {
+			"type": "array",
+			"default": [
+				{
+					"name": "Bhairab Patra",
+					"designation": "Creative Designer",
+					"bio": "Crafting seamless digital experiences with an eye for detail and a passion for great design.",
+					"image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+					"button": { "text": "Read More", "link": "#" },
+					"social": [
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z'/></svg>",
+							"link": "#"
+						},
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.944 13.944 0 0 1 1.671 3.149a4.916 4.916 0 0 0 1.523 6.574 4.897 4.897 0 0 1-2.229-.616v.062a4.918 4.918 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.634A9.935 9.935 0 0 0 24 4.557z'/></svg>",
+							"link": "#"
+						},
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.088 4.088 0 0 1 1.523.99 4.088 4.088 0 0 1 .99 1.523c.163.46.349 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.088 4.088 0 0 1-.99 1.523 4.088 4.088 0 0 1-1.523.99c-.46.163-1.26.349-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.088 4.088 0 0 1-1.523-.99 4.088 4.088 0 0 1-.99-1.523c-.163-.46-.349-1.26-.403-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.088 4.088 0 0 1 .99-1.523 4.088 4.088 0 0 1 1.523-.99c.46-.163 1.26-.349 2.43-.403C8.416 2.175 8.796 2.163 12 2.163M12 0C8.741 0 8.333.014 7.053.072 5.775.13 4.902.333 4.14.63a5.876 5.876 0 0 0-2.126 1.384A5.876 5.876 0 0 0 .63 4.14C.333 4.902.13 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.058 1.278.261 2.151.558 2.913a5.876 5.876 0 0 0 1.384 2.126A5.876 5.876 0 0 0 4.14 23.37c.762.297 1.635.5 2.913.558C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.058 2.151-.261 2.913-.558a5.876 5.876 0 0 0 2.126-1.384 5.876 5.876 0 0 0 1.384-2.126c.297-.762.5-1.635.558-2.913.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.278-.261-2.151-.558-2.913a5.876 5.876 0 0 0-1.384-2.126A5.876 5.876 0 0 0 19.86.63c-.762-.297-1.635-.5-2.913-.558C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z'/></svg>",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"name": "Swapna Roy",
+					"designation": "HR Manager",
+					"bio": "Building a thriving culture by connecting people with purpose and creating a great workplace.",
+					"image": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+					"button": { "text": "Read More", "link": "#" },
+					"social": [
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z'/></svg>",
+							"link": "#"
+						},
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.944 13.944 0 0 1 1.671 3.149a4.916 4.916 0 0 0 1.523 6.574 4.897 4.897 0 0 1-2.229-.616v.062a4.918 4.918 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.634A9.935 9.935 0 0 0 24 4.557z'/></svg>",
+							"link": "#"
+						},
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.088 4.088 0 0 1 1.523.99 4.088 4.088 0 0 1 .99 1.523c.163.46.349 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.088 4.088 0 0 1-.99 1.523 4.088 4.088 0 0 1-1.523.99c-.46.163-1.26.349-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.088 4.088 0 0 1-1.523-.99 4.088 4.088 0 0 1-.99-1.523c-.163-.46-.349-1.26-.403-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.088 4.088 0 0 1 .99-1.523 4.088 4.088 0 0 1 1.523-.99c.46-.163 1.26-.349 2.43-.403C8.416 2.175 8.796 2.163 12 2.163M12 0C8.741 0 8.333.014 7.053.072 5.775.13 4.902.333 4.14.63a5.876 5.876 0 0 0-2.126 1.384A5.876 5.876 0 0 0 .63 4.14C.333 4.902.13 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.058 1.278.261 2.151.558 2.913a5.876 5.876 0 0 0 1.384 2.126A5.876 5.876 0 0 0 4.14 23.37c.762.297 1.635.5 2.913.558C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.058 2.151-.261 2.913-.558a5.876 5.876 0 0 0 2.126-1.384 5.876 5.876 0 0 0 1.384-2.126c.297-.762.5-1.635.558-2.913.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.278-.261-2.151-.558-2.913a5.876 5.876 0 0 0-1.384-2.126A5.876 5.876 0 0 0 19.86.63c-.762-.297-1.635-.5-2.913-.558C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z'/></svg>",
+							"link": "#"
+						}
+					]
+				},
+				{
+					"name": "Virat Sharma",
+					"designation": "Java Developer",
+					"bio": "Writing robust, scalable backend systems that power products millions of people rely on.",
+					"image": "https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+					"button": { "text": "Read More", "link": "#" },
+					"social": [
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z'/></svg>",
+							"link": "#"
+						},
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.944 13.944 0 0 1 1.671 3.149a4.916 4.916 0 0 0 1.523 6.574 4.897 4.897 0 0 1-2.229-.616v.062a4.918 4.918 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 14.002-7.496 14.002-13.986 0-.21 0-.423-.015-.634A9.935 9.935 0 0 0 24 4.557z'/></svg>",
+							"link": "#"
+						},
+						{
+							"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='currentColor'><path d='M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.403a4.088 4.088 0 0 1 1.523.99 4.088 4.088 0 0 1 .99 1.523c.163.46.349 1.26.403 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.43a4.088 4.088 0 0 1-.99 1.523 4.088 4.088 0 0 1-1.523.99c-.46.163-1.26.349-2.43.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.403a4.088 4.088 0 0 1-1.523-.99 4.088 4.088 0 0 1-.99-1.523c-.163-.46-.349-1.26-.403-2.43C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.43a4.088 4.088 0 0 1 .99-1.523 4.088 4.088 0 0 1 1.523-.99c.46-.163 1.26-.349 2.43-.403C8.416 2.175 8.796 2.163 12 2.163M12 0C8.741 0 8.333.014 7.053.072 5.775.13 4.902.333 4.14.63a5.876 5.876 0 0 0-2.126 1.384A5.876 5.876 0 0 0 .63 4.14C.333 4.902.13 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.058 1.278.261 2.151.558 2.913a5.876 5.876 0 0 0 1.384 2.126A5.876 5.876 0 0 0 4.14 23.37c.762.297 1.635.5 2.913.558C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.058 2.151-.261 2.913-.558a5.876 5.876 0 0 0 2.126-1.384 5.876 5.876 0 0 0 1.384-2.126c.297-.762.5-1.635.558-2.913.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.278-.261-2.151-.558-2.913a5.876 5.876 0 0 0-1.384-2.126A5.876 5.876 0 0 0 19.86.63c-.762-.297-1.635-.5-2.913-.558C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z'/></svg>",
+							"link": "#"
+						}
+					]
+				}
+			]
+		},
+		"options": {
+			"type": "object",
+			"default": {
+				"showName": true,
+				"showDesignation": true,
+				"showBio": false,
+				"showSocial": true,
+				"showButton": false,
+				"openInNewTab": true
+			}
+		},
+		"styles": {
+			"type": "object",
+			"default": {
+				"columns": {
+					"desktop": 3,
+					"tablet": 2,
+					"mobile": 1
+				},
+				"columnGap": 30,
+				"rowGap": 30,
+				"bg": {},
+				"padding": {
+					"desktop": { "top": "40px", "right": "0px", "bottom": "40px", "left": "0px" },
+					"tablet":  { "top": "30px", "right": "0px", "bottom": "30px", "left": "0px" },
+					"mobile":  { "top": "20px", "right": "0px", "bottom": "20px", "left": "0px" }
+				},
+				"margin": {
+					"desktop": { "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" },
+					"tablet":  { "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" },
+					"mobile":  { "top": "0px", "right": "0px", "bottom": "0px", "left": "0px" }
+				},
+				"card": {
+					"bg": { "type": "solid", "color": "#1a1a1a" },
+					"maxWidth": { "desktop": "320px", "tablet": "320px", "mobile": "340px" },
+					"height": { "desktop": "400px", "tablet": "400px", "mobile": "420px" },
+					"radius": { "top": "15px", "right": "15px", "bottom": "15px", "left": "15px" },
+					"border": { "width": "0px", "style": "solid", "color": "#ffffff", "side": "all" },
+					"shadow": [
+						{ "hOffset": "0px", "vOffset": "5px", "blur": "15px", "spreed": "0px", "color": "rgba(0,0,0,0.2)", "isInset": false }
+					],
+					"hoverShadow": [
+						{ "hOffset": "0px", "vOffset": "15px", "blur": "35px", "spreed": "0px", "color": "rgba(0,0,0,0.35)", "isInset": false }
+					]
+				},
+				"image": {
+					"imageFit": "cover",
+					"hoverScale": 1.08
+				},
+				"glass": {
+					"bg": { "type": "solid", "color": "rgba(255,255,255,0.1)" },
+					"blur": 15,
+					"height": "180px",
+					"padding": { "top": "20px", "right": "20px", "bottom": "20px", "left": "20px" },
+					"borderColor": "rgba(255,255,255,0.2)",
+					"textAlign": "center"
+				},
+				"name": {
+					"color": "#ffffff",
+					"margin": { "top": "0px", "right": "0px", "bottom": "6px", "left": "0px" },
+					"typo": {
+						"fontFamily": "",
+						"fontCategory": "",
+						"fontWeight": "500",
+						"fontVariant": "",
+						"isUploadFont": false,
+						"fontSize": { "desktop": 18, "tablet": 18, "mobile": 17 },
+						"fontStyle": "normal",
+						"textTransform": "uppercase",
+						"textDecoration": "none",
+						"lineHeight": "1.2",
+						"letterSpace": "2px"
+					}
+				},
+				"designation": {
+					"color": "#dddddd",
+					"margin": { "top": "0px", "right": "0px", "bottom": "12px", "left": "0px" },
+					"typo": {
+						"fontFamily": "",
+						"fontCategory": "",
+						"fontWeight": "300",
+						"fontVariant": "",
+						"isUploadFont": false,
+						"fontSize": { "desktop": 13, "tablet": 13, "mobile": 12 },
+						"fontStyle": "normal",
+						"textTransform": "none",
+						"textDecoration": "none",
+						"lineHeight": "1.4",
+						"letterSpace": "0px"
+					}
+				},
+				"bio": {
+					"color": "#cccccc",
+					"margin": { "top": "0px", "right": "0px", "bottom": "12px", "left": "0px" },
+					"typo": {
+						"fontFamily": "",
+						"fontCategory": "",
+						"fontWeight": "400",
+						"fontVariant": "",
+						"isUploadFont": false,
+						"fontSize": { "desktop": 13, "tablet": 13, "mobile": 12 },
+						"fontStyle": "normal",
+						"textTransform": "none",
+						"textDecoration": "none",
+						"lineHeight": "1.6",
+						"letterSpace": "0px"
+					}
+				},
+				"social": {
+					"iconColor": "#ffffff",
+					"iconHoverColor": "#ffffff",
+					"iconBg": "rgba(255,255,255,0.0)",
+					"iconHoverBg": "rgba(255,255,255,0.2)",
+					"iconSize": 20,
+					"btnSize": "40px",
+					"btnRadius": { "top": "50%", "right": "50%", "bottom": "50%", "left": "50%" },
+					"gap": 12,
+					"margin": { "top": "10px", "right": "0px", "bottom": "0px", "left": "0px" }
+				},
+				"button": {
+					"color": "#1a1a1a",
+					"hoverColor": "#ffffff",
+					"bg": { "type": "solid", "color": "#ffffff" },
+					"hoverBg": { "type": "solid", "color": "rgba(255,255,255,0.2)" },
+					"padding": { "top": "8px", "right": "20px", "bottom": "8px", "left": "20px" },
+					"radius": { "top": "30px", "right": "30px", "bottom": "30px", "left": "30px" },
+					"margin": { "top": "14px", "right": "0px", "bottom": "0px", "left": "0px" },
+					"typo": {
+						"fontFamily": "",
+						"fontCategory": "",
+						"fontWeight": "500",
+						"fontVariant": "",
+						"isUploadFont": false,
+						"fontSize": { "desktop": 13, "tablet": 13, "mobile": 12 },
+						"fontStyle": "normal",
+						"textTransform": "none",
+						"textDecoration": "none",
+						"lineHeight": "1.4",
+						"letterSpace": "0px"
+					}
+				}
+			}
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./view.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
