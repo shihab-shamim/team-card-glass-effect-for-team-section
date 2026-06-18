@@ -15,7 +15,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 
 	return (
 		<>
-			{/* ── Container ─────────────────────────────────────── */}
+			
 			<PanelBody className='bPlPanelBody' title={__('Container', 'team-section')} initialOpen={false}>
 				<Background
 					label={__('Background', 'team-section')}
@@ -42,7 +42,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				/>
 			</PanelBody>
 
-			{/* ── Card ──────────────────────────────────────────── */}
+			
 			<PanelBody className='bPlPanelBody' title={__('Card', 'team-section')} initialOpen={false}>
 				<Background
 					label={__('Background', 'team-section')}
@@ -102,7 +102,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				/>
 			</PanelBody>
 
-			{/* ── Image ─────────────────────────────────────────── */}
+			
 			<PanelBody className='bPlPanelBody' title={__('Image', 'team-section')} initialOpen={false}>
 				<SelectControl
 					label={__('Image Fit', 'team-section')}
@@ -121,7 +121,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				/>
 			</PanelBody>
 
-			{/* ── Glass Effect ──────────────────────────────────── */}
+			
 			<PanelBody className='bPlPanelBody' title={__('Glass Effect', 'team-section')} initialOpen={false}>
 				<Background
 					label={__('Glass Background', 'team-section')}
@@ -163,7 +163,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				/>
 			</PanelBody>
 
-			{/* ── Name ──────────────────────────────────────────── */}
+			
 			{options.showName && (
 				<PanelBody className='bPlPanelBody' title={__('Name', 'team-section')} initialOpen={false}>
 					<ColorControl
@@ -186,7 +186,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				</PanelBody>
 			)}
 
-			{/* ── Designation ───────────────────────────────────── */}
+		
 			{options.showDesignation && (
 				<PanelBody className='bPlPanelBody' title={__('Designation', 'team-section')} initialOpen={false}>
 					<ColorControl
@@ -209,7 +209,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				</PanelBody>
 			)}
 
-			{/* ── Bio ───────────────────────────────────────────── */}
+			
 			{options.showBio && (
 				<PanelBody className='bPlPanelBody' title={__('Bio', 'team-section')} initialOpen={false}>
 					<ColorControl
@@ -232,7 +232,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				</PanelBody>
 			)}
 
-			{/* ── Social Icons ──────────────────────────────────── */}
+			
 			{options.showSocial && (
 				<PanelBody className='bPlPanelBody' title={__('Social Icons', 'team-section')} initialOpen={false}>
 					<ColorControl
@@ -295,7 +295,7 @@ const Style = ({ attributes, setAttributes, device }) => {
 				</PanelBody>
 			)}
 
-			{/* ── CTA Button ────────────────────────────────────── */}
+			
 			{options.showButton && (
 				<PanelBody className='bPlPanelBody' title={__('CTA Button', 'team-section')} initialOpen={false}>
 					<ColorControl
