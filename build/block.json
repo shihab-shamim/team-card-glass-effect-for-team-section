@@ -168,9 +168,9 @@
             "color": "#1a1a1a"
           },
           "maxWidth": {
-            "desktop": "320px",
-            "tablet": "320px",
-            "mobile": "340px"
+            "desktop": "100%",
+            "tablet": "100%",
+            "mobile": "100%"
           },
           "height": {
             "desktop": "400px",

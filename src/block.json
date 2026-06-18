@@ -121,7 +121,7 @@
 				},
 				"card": {
 					"bg": { "type": "solid", "color": "#1a1a1a" },
-					"maxWidth": { "desktop": "320px", "tablet": "320px", "mobile": "340px" },
+					"maxWidth": { "desktop": "100%", "tablet": "100%", "mobile": "100%" },
 					"height": { "desktop": "400px", "tablet": "400px", "mobile": "420px" },
 					"radius": { "top": "15px", "right": "15px", "bottom": "15px", "left": "15px" },
 					"border": { "width": "0px", "style": "solid", "color": "#ffffff", "side": "all" },
