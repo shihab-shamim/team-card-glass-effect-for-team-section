@@ -1221,7 +1221,9 @@ const normalizeIconColor = svgString => {
   });
 };
 const OneCard = ({
-  attributes
+  attributes,
+  Richtext,
+  setAttributes
 }) => {
   const {
     profiles = [],
@@ -1252,13 +1254,58 @@ const OneCard = ({
     className: "tsb_tcge-glass-overlay"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tsb_tcge-member-info"
-  }, options.showName && profile.name && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "tsb_tcge-name"
-  }, profile.name), options.showDesignation && profile.designation && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "tsb_tcge-designation"
-  }, profile.designation), options.showBio && profile.bio && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "tsb_tcge-bio"
-  }, profile.bio)), options.showSocial && profile.social?.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
+  }, options.showName && profile.name && !Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    className: "tsb_tcge-name",
+    dangerouslySetInnerHTML: {
+      __html: profile.name
+    }
+  }), options.showName && Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Richtext, {
+    tagName: "h3",
+    value: profile.name,
+    onChange: value => setAttributes({
+      ...attributes,
+      profiles: attributes.profiles.map((p, i) => i === index ? {
+        ...p,
+        name: value
+      } : p)
+    }),
+    className: "tsb_tcge-name",
+    placeholder: "Enter name"
+  }), options.showDesignation && profile.designation && !Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "tsb_tcge-designation",
+    dangerouslySetInnerHTML: {
+      __html: profile.designation
+    }
+  }), options.showDesignation && Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Richtext, {
+    tagName: "p",
+    value: profile.designation,
+    onChange: value => setAttributes({
+      ...attributes,
+      profiles: attributes.profiles.map((p, i) => i === index ? {
+        ...p,
+        designation: value
+      } : p)
+    }),
+    className: "tsb_tcge-designation",
+    placeholder: "Enter designation"
+  }), options.showBio && profile.bio && !Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "tsb_tcge-bio",
+    dangerouslySetInnerHTML: {
+      __html: profile.bio
+    }
+  }), options.showBio && Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Richtext, {
+    tagName: "p",
+    value: profile.bio,
+    onChange: value => setAttributes({
+      ...attributes,
+      profiles: attributes.profiles.map((p, i) => i === index ? {
+        ...p,
+        bio: value
+      } : p)
+    }),
+    className: "tsb_tcge-bio",
+    placeholder: "Enter bio"
+  })), options.showSocial && profile.social?.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "tsb_tcge-social-links"
   }, profile.social.map((item, sIndex) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
     key: sIndex,
@@ -1273,12 +1320,30 @@ const OneCard = ({
     dangerouslySetInnerHTML: {
       __html: normalizeIconColor(item.icon)
     }
-  })))), options.showButton && profile.button?.text && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  })))), options.showButton && profile.button?.text && !Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: "tsb_tcge-button",
     href: profile.button.link || '#',
     target: options.openInNewTab ? '_blank' : '_self',
-    rel: options.openInNewTab ? 'noopener noreferrer' : ''
-  }, profile.button.text))))));
+    rel: options.openInNewTab ? 'noopener noreferrer' : '',
+    dangerouslySetInnerHTML: {
+      __html: profile.button.text
+    }
+  }), options.showButton && Richtext && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Richtext, {
+    tagName: "span",
+    value: profile.button?.text,
+    onChange: value => setAttributes({
+      ...attributes,
+      profiles: attributes.profiles.map((p, i) => i === index ? {
+        ...p,
+        button: {
+          ...p.button,
+          text: value
+        }
+      } : p)
+    }),
+    className: "tsb_tcge-button",
+    placeholder: "Button text"
+  }))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OneCard);
 

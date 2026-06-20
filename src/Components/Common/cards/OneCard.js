@@ -10,7 +10,7 @@ const normalizeIconColor = (svgString) => {
 		});
 };
 
-export const OneCard = ({ attributes }) => {
+export const OneCard = ({ attributes, Richtext, setAttributes }) => {
 	const {
 		profiles = [],
 		options = { showName: true, showDesignation: true, showBio: false, showSocial: true, showButton: false, openInNewTab: true }
@@ -30,17 +30,17 @@ export const OneCard = ({ attributes }) => {
 
 						<div className='tsb_tcge-glass-overlay'>
 							<div className='tsb_tcge-member-info'>
-								{options.showName && profile.name && (
-									<h3 className='tsb_tcge-name'>{profile.name}</h3>
-								)}
+								{options.showName && profile.name && !Richtext && <h3 className='tsb_tcge-name' dangerouslySetInnerHTML={{ __html: profile.name }} />}
 
-								{options.showDesignation && profile.designation && (
-									<p className='tsb_tcge-designation'>{profile.designation}</p>
-								)}
+								{options.showName && Richtext && <Richtext tagName="h3" value={profile.name} onChange={(value) => setAttributes({ ...attributes, profiles: attributes.profiles.map((p, i) => i === index ? { ...p, name: value } : p) })} className='tsb_tcge-name' placeholder="Enter name" />}
 
-								{options.showBio && profile.bio && (
-									<p className='tsb_tcge-bio'>{profile.bio}</p>
-								)}
+								{options.showDesignation && profile.designation && !Richtext && <p className='tsb_tcge-designation' dangerouslySetInnerHTML={{ __html: profile.designation }} />}
+
+								{options.showDesignation && Richtext && <Richtext tagName="p" value={profile.designation} onChange={(value) => setAttributes({ ...attributes, profiles: attributes.profiles.map((p, i) => i === index ? { ...p, designation: value } : p) })} className='tsb_tcge-designation' placeholder="Enter designation" />}
+
+								{options.showBio && profile.bio && !Richtext && <p className='tsb_tcge-bio' dangerouslySetInnerHTML={{ __html: profile.bio }} />}
+
+								{options.showBio && Richtext && <Richtext tagName="p" value={profile.bio} onChange={(value) => setAttributes({ ...attributes, profiles: attributes.profiles.map((p, i) => i === index ? { ...p, bio: value } : p) })} className='tsb_tcge-bio' placeholder="Enter bio" />}
 							</div>
 
 							{options.showSocial && profile.social?.length > 0 && (
@@ -59,16 +59,17 @@ export const OneCard = ({ attributes }) => {
 								</ul>
 							)}
 
-							{options.showButton && profile.button?.text && (
+							{options.showButton && profile.button?.text && !Richtext && (
 								<a
 									className='tsb_tcge-button'
 									href={profile.button.link || '#'}
 									target={options.openInNewTab ? '_blank' : '_self'}
 									rel={options.openInNewTab ? 'noopener noreferrer' : ''}
-								>
-									{profile.button.text}
-								</a>
+									dangerouslySetInnerHTML={{ __html: profile.button.text }}
+								/>
 							)}
+
+							{options.showButton && Richtext && <Richtext tagName="span" value={profile.button?.text} onChange={(value) => setAttributes({ ...attributes, profiles: attributes.profiles.map((p, i) => i === index ? { ...p, button: { ...p.button, text: value } } : p) })} className='tsb_tcge-button' placeholder="Button text" />}
 						</div>
 					</div>
 				))}
